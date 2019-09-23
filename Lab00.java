@@ -13,25 +13,28 @@ public class Lab00
         for (int i = 0; i < nums.length; i++)
             System.out.println(nums[i]);
 
-        // numFound = char_count(y, "l");
-        // System.out.println("Found: " + numFound);
+        int numFound = char_count(y, 'l');
+        System.out.println("Found: " + numFound);
 
-        for (int i = 0; i < 11; i++)
+        for (int i = 1; i < 11; i++)
             System.out.print(i + " ");
+
+        System.out.println();
 
     }
 
-    // public static int charCount(String s, String c)
-    // {
-    //     int count = 0;
-    //     for (String ch : s)
-    //     {
-    //         if (ch == c)
-    //         {
-    //             count++;
-    //         }
-    //     }
-    // }
-
+    public static int char_count(String s, char c)
+    {
+        char[] charArray = s.toCharArray();
+        int count = 0;
+        for (char ch : charArray)
+        {
+            if (ch == c)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
 
    }
